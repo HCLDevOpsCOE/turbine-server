@@ -1,0 +1,19 @@
+server:
+  port: 8989
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ec2-54-70-136-53.us-west-2.compute.amazonaws.com/eureka/    
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
+    
+turbine:
+  aggregator:
+    clusterConfig: ORDER
+  appConfig: order
+
+  
